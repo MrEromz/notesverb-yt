@@ -36,8 +36,8 @@ Each service has its own PostgreSQL database following the database-per-service 
 ### 1. Clone the Repository
 
 ```bash
-git clone <repository-url>
-cd notesverb
+git clone https://github.com/fiston-user/notesverb-yt.git
+cd notesverb-yt
 ```
 
 ### 2. Environment Setup
@@ -67,6 +67,7 @@ Edit the `.env` files and update the following critical values:
 - Database passwords (if not using default Docker setup)
 
 **Generate secure secrets:**
+
 ```bash
 # Generate JWT secrets
 openssl rand -base64 32
@@ -148,21 +149,25 @@ npm run dev
 ## 📡 API Endpoints
 
 ### Authentication
+
 - `POST /api/auth/register` - User registration
 - `POST /api/auth/login` - User login
 - `POST /api/auth/refresh` - Refresh tokens
 - `POST /api/auth/logout` - User logout
 
 ### Users
+
 - `GET /api/users/profile` - Get user profile
 - `PUT /api/users/profile` - Update user profile
 
 ### Notes
+
 - `POST /api/notes` - Create a note
 - `GET /api/notes` - Get user's notes
 - `GET /api/notes/:id` - Get specific note
 
 ### Tags
+
 - `POST /api/tags` - Create a tag
 - `GET /api/tags` - Get user's tags
 
@@ -248,6 +253,7 @@ This project is licensed under the MIT License.
 ### Health Checks
 
 Each service provides a health check endpoint:
+
 - API Gateway: `http://localhost:8080/health`
 - Auth Service: `http://localhost:3001/health`
 - User Service: `http://localhost:3002/health`
