@@ -1,4 +1,6 @@
-# NotesVerb - Microservices Note-Taking Application [https://www.youtube.com/watch?v=8qN7rMFsd3g]
+# NotesVerb - Microservices Note-Taking Application 
+
+### Video :  [https://www.youtube.com/watch?v=8qN7rMFsd3g]
 
 A modern, scalable note-taking application built with microservices architecture using Node.js, TypeScript, and PostgreSQL.
 
